@@ -1,4 +1,4 @@
-# Django-Frete
+# Django-Frete Links Úteis
 Projeto formulário Django
 
 Youtube CRUD PYTHON: https://youtube.com/playlist?list=PLbnAsJ6zlidvszSXnxplfYgtB6KQ-fZ-N
