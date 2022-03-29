@@ -5,43 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0011867-6c0a-415e-bc34-2ef2b4862259" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/templates/contas/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/templates/contas/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contas/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle_gastos/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle_gastos/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle_gastos/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle_gastos/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle_gastos/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/templates/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frete/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/lancha/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/lancha/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/lancha/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/lancha/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/lancha/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lancha/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frete_express/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/frete_express/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lancha/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lancha/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +46,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

@@ -1,7 +1,15 @@
 from django.shortcuts import render
+from django.views import View
 
-def home(request):
-    return render(request, 'index.html')
 
-def tabela(request):
-    return render(request, 'tables.html')
+class Index(View):
+    template = 'index.html'
+
+    def get(self, request):
+        return render(request, self.template)
+
+class Login(View):
+    template = 'login.html'
+
+    def get(self, request):
+        return render(request, self.template)
