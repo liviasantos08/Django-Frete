@@ -1,7 +1,12 @@
+{% extends "base.html" %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block title %}Dashboard Login{% endblock %}
+
+{% block links %}
+
+
 
 <head>
 
@@ -24,6 +29,10 @@
 
 </head>
 
+
+{% endblock %}
+{% block body %}
+
 <body class="bg-gradient-primary">
 
     <div class="container">
@@ -42,27 +51,19 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form method="post" action="/login/">
+                                        {% csrf_token %}
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
+                                            <div class="form-label-group">
+                                                {{ form.username }}
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
-                                        <hr>
+                                        <div class="form-group">
+                                            <div class="form-label-group">
+                                                {{ form.password }}
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-block" type="submit">Login</button>
                                     </form>
                                     <hr>
                                     <div class="text-center">
@@ -83,6 +84,19 @@
 
     </div>
 
+    <script>
+    document.getElementById("id_username").classList.add("form-control");
+    document.getElementById("id_password").classList.add("form-control");
+    document.getElementById("id_username").placeholder = "Username";
+    document.getElementById("id_password").placeholder = "Password";
+    document.getElementById("id_username").type = "text";
+    document.getElementById("id_password").type = "password";
+    document.getElementById("id_username").required = "required";
+    document.getElementById("id_password").required = "required";
+    document.getElementById("id_username").autofocus = "autofocus";
+    </script>
+
+
     <!-- Bootstrap core JavaScript-->
     <script src={% static "jquery/jquery.min.js" %}></script>
     <script src={% static "bootstrap/js/bootstrap.bundle.min.js" %}></script>
@@ -94,5 +108,5 @@
     <script src={% static "js/sb-admin-2.min.js" %}></script>
 
 </body>
+{% endblock %}
 
-</html>
