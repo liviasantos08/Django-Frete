@@ -20,3 +20,15 @@ class Cadastro(View):
 
     def get(self, request):
         return render(request, self.template)
+
+class Tabela(View):
+    template = 'tabela.html'
+
+    def get(self, request):
+        return render(request, self.template)
+
+class Graficos(View):
+    template = 'graficos.html'
+
+    def get(self, request):
+        return render(request, self.template)
