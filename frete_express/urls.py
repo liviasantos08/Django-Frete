@@ -11,6 +11,8 @@ urlpatterns = [
     path('tabela/', views.Tabela.as_view(), name='tabela'),
     path('graficos/', views.Graficos.as_view(), name='graficos'),
 
+
+
 ]
 
 
