@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3> Lista de Registros </h3>
+<hr>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Color</th>
+            </tr>
+            {% for Clientes in object_list %}
+            <tr>
+                <td>{{ Clientes.pk}}</td>
+                <td>{{ Clientes.nome}}</td>
+                <td>{{ Clientes.email}}</td>
+            </tr>
+
+            {% empty %}
+            <tr>
+                <td>Nenhum campo cadastrado</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</div>
+{% endblock content %}

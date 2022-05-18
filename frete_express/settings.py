@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 """
 Django settings for frete_express project.
 
@@ -9,12 +10,13 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+=======
+>>>>>>> Stashed changes
 import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -27,7 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +38,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< Updated upstream
     'lancha',
+=======
+]
+
+THIRD_PARTY_APPS = [
+    'crispy_forms',
+    'bootstrap_datepicker_plus',
+]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOCAL_APPS = [
+    "bootstrap4",
+    'lancha',
+
+>>>>>>> Stashed changes
 ]
 
 MIDDLEWARE = [
@@ -70,7 +87,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'frete_express.wsgi.application'
 
+LOGIN_REDIRECT_URL = 'base'
 
+<<<<<<< Updated upstream
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -81,6 +100,9 @@ DATABASES = {
     }
 }
 
+=======
+LOGOUT_REDIRECT_URL = 'login'
+>>>>>>> Stashed changes
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -100,7 +122,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -111,7 +132,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
@@ -127,3 +147,11 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+<<<<<<< Updated upstream
+=======
+
+try:
+    from frete_express.local_settings import *
+except ImportError:
+    pass
+>>>>>>> Stashed changes

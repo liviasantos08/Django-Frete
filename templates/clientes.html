@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block content %}
+<div class="card-body">
+    <form id="myForm" method="post" action="" action="#" class="number-tab-steps wizard-circle" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="card-body">
+            <p> Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }} </p>
+                <!--  {{ wizard.management_form }} -->
+            <div class="form-group">
+             {{ wizard.management_form }}
+              {% if wizard.form.forms %}
+                 {{ wizard.form.management_form }}
+                <div class="form-row">
+                            {% for form in wizard.form.forms %}
+
+                                <div class="form-group col-md-6">
+                                    {{ form | crispy }}
+                                    {% endfor %}
+                                    {% else %}
+                                    {{ wizard.form|crispy }}
+                                    {% endif %}
+                                </div>
+                </div>
+            </div>
+        </div>
+                          {% if wizard.steps.prev %}
+
+ <div class="btnsaction">
+     <button name="wizard_goto_step" type="submit" class="page-prev btn btn-default" value="{{ wizard.steps.prev }}" formnovalidate="formnovalidate">{% trans "Previous" %}</button>
+  {% endif %}
+  <input type="submit" class="page-next btn btn-primary  sw-btn-next" value="{% trans "Next" %}"/>
+ </div>
+    </form>
+
+</div>
+{% endblock %}
